@@ -34,6 +34,7 @@ const About = () => (
         src="/arrow-down.svg"
         alt="arrow down"
         className="w-[18px] h-[28px] object-contain mt-[28px]"
+        style={{ animation: 'bounce 2s infinite' }}
       />
     </motion.div>
   </section>
