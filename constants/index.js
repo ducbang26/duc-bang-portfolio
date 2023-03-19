@@ -54,22 +54,25 @@ export const newFeatures = [
 
 export const insights = [
   {
-    imgUrl: '/planet-06.png',
+    imgUrl: '/react-tailwind.png',
     title: 'Nextjs TailwindCSS boilerplate',
     subtitle:
         'Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.',
+    link: 'https://github.com/ducbang26/nextjs-tailwindcss-boilerplate',
   },
   {
-    imgUrl: '/planet-07.png',
-    title: 'Duc Bang Portfolio',
+    imgUrl: '/project-2.png',
+    title: 'Search Film',
     subtitle:
         'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
+    link: 'https://search-film-ducbang.netlify.app/',
   },
   {
-    imgUrl: '/planet-08.png',
+    imgUrl: '/project-3.png',
     title: 'DEV Community Clone',
     subtitle:
         'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
+    link: 'https://datndev.netlify.app/',
   },
 ];
 

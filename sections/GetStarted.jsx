@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { TitleText, TypingText } from '../components';
-import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
+import { staggerContainer, fadeIn } from '../utils/motion';
 
 const GetStarted = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -16,10 +16,10 @@ const GetStarted = () => (
       className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
     >
       <motion.div
-        variants={planetVariants('left')}
+        variants={fadeIn('right', 'spring', 0.2, 1)}
         className={`flex-1 ${styles.flexCenter}`}
       >
-        <div className="border-[#888] border-2 rounded-[20px] overflow-hidden">
+        <div className="border-[#888] border-2 rounded-[20px] overflow-hidden w-[90%]">
           <div className="border-black border-[8px]">
             <img
               src="/experience-1.png"
