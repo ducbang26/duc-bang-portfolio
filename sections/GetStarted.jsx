@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { TitleText, TypingText } from '../components';
-import { staggerContainer, fadeIn } from '../utils/motion';
+import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 
 const GetStarted = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -16,6 +16,16 @@ const GetStarted = () => (
       className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
     >
       <motion.div
+        variants={planetVariants('left')}
+        className={`flex-1 ${styles.flexCenter}`}
+      >
+        <img
+          src="/get-started.png"
+          alt="get-started"
+          className="w-[90%] h-[90%] object-contain"
+        />
+      </motion.div>
+      {/* <motion.div
         variants={fadeIn('right', 'spring', 0.2, 1)}
         className={`flex-1 ${styles.flexCenter}`}
       >
@@ -28,13 +38,13 @@ const GetStarted = () => (
             />
           </div>
         </div>
-      </motion.div>
+      </motion.div> */}
       <motion.div
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] flex justify-center flex-col"
       >
         <TypingText title="| Selected Project" />
-        <TitleText title={<>TTC Logistics Landing Page</>} />
+        <TitleText title={<>Logistics Landing Page</>} />
         <div className="mt-[30px] flex flex-col max-w-[370px] gap-[24px]">
           <div className="flex flex-col">
             <div className="grid justify-center grid-cols-4 md:grid-cols-5 gap-y-[10px] md:gap-y-[20px] mb-[20px]">
@@ -51,7 +61,7 @@ const GetStarted = () => (
             <p className="flex-1 font-normal text-[18px] text-[#B0B0B0] leading-[32.4px] mb-[20px]">
               A landing page made with react, typescript, tailwind, nextjs with responsive for multi-device.
             </p>
-            <a href="https://logistics.dev.pixa.asia/" target="_blank" className="flex justify-center items-center w-[150px] h-[50px] bg-[#1876d2] hover:bg-[#2884e0] text-white rounded transition duration-300" rel="noreferrer"><p className="text-[20px]">Live Demo</p></a>
+            <div className="flex justify-center items-center w-[150px] h-[50px] bg-[#1876d2] hover:bg-[#2884e0] text-white rounded transition duration-300"><p className="text-[20px]">Live Demo</p></div>
           </div>
         </div>
       </motion.div>
